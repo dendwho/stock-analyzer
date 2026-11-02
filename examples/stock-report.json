@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "report_type": "stock",
+  "issuer": {
+    "name": "SYNTHETIC Example Industries",
+    "nse_symbol": null,
+    "bse_code": null,
+    "isin": null
+  },
+  "as_of": "2026-11-02T15:30:00+05:30",
+  "reference_price": null,
+  "verdict": {
+    "status": "insufficient-evidence",
+    "timeframe": "Provisional 3\u20135 years; no present recommendation",
+    "rationale": "Synthetic fixture only; no real issuer financials or current market evidence.",
+    "confidence": "low",
+    "confidence_reason": "No actual investment evidence provided."
+  },
+  "entry_assessment": {
+    "horizon": "Provisional next 1\u20133 months",
+    "market_context": "Unavailable; synthetic fixture is not current market evidence.",
+    "zones": [],
+    "unavailable_reason": "No verified current price, valuation or market context."
+  },
+  "sources": [],
+  "data_gaps": [
+    "All actual issuer and market evidence is unavailable."
+  ]
+}

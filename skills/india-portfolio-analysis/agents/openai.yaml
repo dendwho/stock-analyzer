@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Portfolio Analysis"
+  short_description: "Indian Portfolio Analysis: research workflow"
+  default_prompt: "Use $india-portfolio-analysis for Indian market research."

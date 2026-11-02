@@ -1,0 +1,31 @@
+{
+  "rules": [
+    {
+      "field": "roe_pct",
+      "op": "gte",
+      "value": 15
+    },
+    {
+      "field": "debt_equity",
+      "op": "lte",
+      "value": 0.5
+    }
+  ],
+  "rows": [
+    {
+      "id": "SYNTHETIC-QUALITY",
+      "roe_pct": 20,
+      "debt_equity": 0.2
+    },
+    {
+      "id": "SYNTHETIC-LEVERED",
+      "roe_pct": 18,
+      "debt_equity": 1.5
+    },
+    {
+      "id": "SYNTHETIC-MISSING",
+      "roe_pct": null,
+      "debt_equity": 0.1
+    }
+  ]
+}

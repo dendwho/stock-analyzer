@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Entry and Trade Planning"
+  short_description: "Indian Entry and Trade Planning: research workflow"
+  default_prompt: "Use $india-trade-planning for Indian market research."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Market News Roundup"
+  short_description: "Indian Market News Roundup: research workflow"
+  default_prompt: "Use $india-market-news-roundup for Indian market research."

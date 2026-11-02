@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-02",
+  "note": "Discovery pages, not stable APIs. Verify current URLs and inspect actual documents. Access, reuse and licensing may vary.",
+  "sources": [
+    {"id":"sebi-filings","url":"https://www.sebi.gov.in/curation/corporate_filings.html","role":"Official directory of exchange financial, ownership and corporate filings"},
+    {"id":"nse-results","url":"https://www.nseindia.com/companies-listing/corporate-filings-financial-results","role":"Filed financial results; may require interactive access"},
+    {"id":"nse-shareholding","url":"https://www.nseindia.com/companies-listing/corporate-filings-shareholding-pattern","role":"Dated ownership disclosures"},
+    {"id":"bse-corporates","url":"https://www.bseindia.com/corporates/ann.html","role":"Company announcements and filing discovery"},
+    {"id":"nse-history","url":"https://www.nseindia.com/static/resources/historical-reports-capital-market-daily-monthly-archives","role":"Price/volume, actions, deals, VIX and historical report discovery"},
+    {"id":"nifty-history","url":"https://www.niftyindices.com/reports","role":"Index history, total returns and valuation series"},
+    {"id":"sebi-ipo","url":"https://www.sebi.gov.in/filings/public-issues.html","role":"DRHP/RHP/final offer documents and amendments"},
+    {"id":"nse-ipo","url":"https://www.nseindia.com/market-data/all-upcoming-issues-ipo","role":"Issue calendar and subscription discovery"},
+    {"id":"rbi","url":"https://www.rbi.org.in/","role":"Monetary policy, releases and regulatory circulars"},
+    {"id":"rbi-dbie","url":"https://data.rbi.org.in/DBIE/","role":"Official economic series; verify current navigation"},
+    {"id":"mospi","url":"https://www.mospi.gov.in/","role":"Official economic releases"},
+    {"id":"nsdl","url":"https://www.fpi.nsdl.co.in/","role":"FPI investment data; distinguish from exchange cash-flow series"},
+    {"id":"amfi","url":"https://www.amfiindia.com/","role":"Fund industry flows and disclosures"},
+    {"id":"nse-feed","url":"https://www.nseindia.com/static/market-data/real-time-data-subscription","role":"Feed access, vendor and licensing discovery"},
+    {"id":"gmp-investorgain","url":"https://www.investorgain.com/","role":"Unofficial GMP publisher; inspect issue-specific quote and time"},
+    {"id":"gmp-ipopremium","url":"https://www.ipopremium.in/","role":"Unofficial GMP publisher; inspect issue-specific quote and time"},
+    {"id":"gmp-chittorgarh","url":"https://www.chittorgarh.com/","role":"IPO discovery and attributed GMP if available; no assumption of independent quote origin"}
+  ]
+}

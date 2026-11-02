@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian News Impact Analysis"
+  short_description: "Indian News Impact Analysis: research workflow"
+  default_prompt: "Use $india-news-impact-analysis for Indian market research."

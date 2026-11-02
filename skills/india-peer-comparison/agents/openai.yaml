@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Peer Comparison"
+  short_description: "Indian Peer Comparison: research workflow"
+  default_prompt: "Use $india-peer-comparison for Indian market research."

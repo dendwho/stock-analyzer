@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian IPO Analysis"
+  short_description: "Indian IPO Analysis: research workflow"
+  default_prompt: "Use $india-ipo-analysis for Indian market research."

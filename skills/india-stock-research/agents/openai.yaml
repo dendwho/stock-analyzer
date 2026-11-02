@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Stock Research"
+  short_description: "Indian Stock Research: research workflow"
+  default_prompt: "Use $india-stock-research for Indian market research."

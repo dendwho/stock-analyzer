@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Research Journal"
+  short_description: "Indian Research Journal: research workflow"
+  default_prompt: "Use $india-research-journal for Indian market research."

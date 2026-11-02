@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Market Conditions"
+  short_description: "Indian Market Conditions: research workflow"
+  default_prompt: "Use $india-market-analysis for Indian market research."

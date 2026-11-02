@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "workflows": [
+    {
+      "id": "complete-stock",
+      "entry_skill": "india-stock-research",
+      "skills": ["india-fundamental-analysis", "india-forensic-analysis", "india-earnings-analysis", "india-peer-comparison", "india-sector-analysis", "india-stock-valuation", "india-macro-analysis", "india-market-analysis", "india-technical-analysis", "india-market-news-roundup", "india-news-impact-analysis", "india-trade-planning"],
+      "gates": ["resolve-security", "verify-cutoff-and-reference-price", "reconcile-financial-basis-and-capital", "justify-verdict-and-horizon", "assess-entries-and-reachability", "review-contrary-evidence-and-gaps"],
+      "required_outputs": ["investment-verdict", "timeframe", "scenarios", "entry-assessment", "sources", "data-gaps"]
+    },
+    {
+      "id": "complete-ipo",
+      "entry_skill": "india-ipo-analysis",
+      "skills": ["india-fundamental-analysis", "india-forensic-analysis", "india-sector-analysis", "india-peer-comparison", "india-stock-valuation", "india-market-analysis"],
+      "gates": ["latest-applicable-offer-and-amendments", "reconcile-fresh-vs-ofs-and-dilution", "category-subscription-basis", "mandatory-gmp-with-freshness", "separate-ownership-and-listing-conclusions"],
+      "required_outputs": ["ownership-verdict", "timeframe", "valuation", "subscription", "gmp", "listing-assessment", "sources", "data-gaps"]
+    },
+    {
+      "id": "market-and-news",
+      "entry_skill": "india-market-news-roundup",
+      "skills": ["india-market-analysis", "india-macro-analysis", "india-news-impact-analysis"],
+      "gates": ["declare-session-and-news-window", "verify-observation-times", "deduplicate-stories", "separate-observed-reaction-from-causality"],
+      "required_outputs": ["market-context", "ranked-news", "affected-exposures", "upcoming-events", "sources", "coverage-gaps"]
+    },
+    {
+      "id": "liked-stock-entry",
+      "entry_skill": "india-trade-planning",
+      "skills": ["india-stock-valuation", "india-technical-analysis", "india-market-analysis", "india-sector-analysis"],
+      "gates": ["verify-price-and-existing-thesis", "separate-value-from-technical-levels", "state-entry-horizon", "assess-current-market-and-historical-excursions", "require-explicit-risk-inputs-before-quantities"],
+      "required_outputs": ["price-sensitive-assessment", "entry-zones-or-no-valid-entry", "reachability", "triggers", "invalidation", "sources", "data-gaps"]
+    }
+  ]
+}

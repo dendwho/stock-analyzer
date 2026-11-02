@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Derivatives Research"
+  short_description: "Indian Derivatives Research: research workflow"
+  default_prompt: "Use $india-derivatives-analysis for Indian market research."

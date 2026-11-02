@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Fundamentals"
+  short_description: "Indian Fundamentals: research workflow"
+  default_prompt: "Use $india-fundamental-analysis for Indian market research."

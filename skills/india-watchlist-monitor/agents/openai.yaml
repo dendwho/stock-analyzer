@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Watchlist Review"
+  short_description: "Indian Watchlist Review: research workflow"
+  default_prompt: "Use $india-watchlist-monitor for Indian market research."

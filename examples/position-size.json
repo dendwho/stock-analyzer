@@ -1,0 +1,14 @@
+{
+  "account_equity": 1000000,
+  "entry": 100,
+  "stop": 90,
+  "risk_fraction": 0.01,
+  "available_cash": 200000,
+  "max_position_fraction": 0.1,
+  "round_trip_cost_bps": 20,
+  "buy_cost_bps": 10,
+  "adverse_slippage_per_share": 0.5,
+  "max_sector_fraction": 0.25,
+  "current_sector_value": 180000,
+  "lot_size": 1
+}

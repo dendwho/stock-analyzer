@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Technical Analysis"
+  short_description: "Indian Technical Analysis: research workflow"
+  default_prompt: "Use $india-technical-analysis for Indian market research."

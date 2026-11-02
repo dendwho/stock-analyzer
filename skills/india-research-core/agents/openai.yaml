@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Research Core"
+  short_description: "Shared evidence, data and financial calculations"
+  default_prompt: "Use $india-research-core to check research inputs."

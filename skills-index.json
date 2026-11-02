@@ -1,0 +1,365 @@
+{
+  "schema_version": 1,
+  "market": "India",
+  "skills": [
+    {
+      "id": "india-research-core",
+      "path": "skills/india-research-core/SKILL.md",
+      "inputs": [
+        "source documents or normalized inputs"
+      ],
+      "outputs": [
+        "evidence-ledger",
+        "validated-calculations"
+      ],
+      "requires": [],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-stock-research",
+      "path": "skills/india-stock-research/SKILL.md",
+      "inputs": [
+        "company filings",
+        "price history",
+        "market and sector evidence"
+      ],
+      "outputs": [
+        "complete-stock-report",
+        "investment-verdict",
+        "entry-plan"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-fundamental-analysis",
+      "path": "skills/india-fundamental-analysis/SKILL.md",
+      "inputs": [
+        "annual reports",
+        "financial statements",
+        "segment disclosures"
+      ],
+      "outputs": [
+        "fundamental-assessment"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-stock-valuation",
+      "path": "skills/india-stock-valuation/SKILL.md",
+      "inputs": [
+        "normalized financials",
+        "forecasts",
+        "capital structure",
+        "price"
+      ],
+      "outputs": [
+        "valuation-scenarios",
+        "investment-verdict"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-forensic-analysis",
+      "path": "skills/india-forensic-analysis/SKILL.md",
+      "inputs": [
+        "audited notes",
+        "cash flows",
+        "ownership and governance filings"
+      ],
+      "outputs": [
+        "forensic-flags"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-earnings-analysis",
+      "path": "skills/india-earnings-analysis/SKILL.md",
+      "inputs": [
+        "results filing",
+        "prior comparable results",
+        "earnings materials"
+      ],
+      "outputs": [
+        "earnings-review",
+        "thesis-delta"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-peer-comparison",
+      "path": "skills/india-peer-comparison/SKILL.md",
+      "inputs": [
+        "comparable financials",
+        "peer set",
+        "dated valuations"
+      ],
+      "outputs": [
+        "peer-matrix"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-sector-analysis",
+      "path": "skills/india-sector-analysis/SKILL.md",
+      "inputs": [
+        "industry evidence",
+        "peer disclosures",
+        "sector data"
+      ],
+      "outputs": [
+        "sector-report"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-macro-analysis",
+      "path": "skills/india-macro-analysis/SKILL.md",
+      "inputs": [
+        "official macro releases",
+        "rates and currency data"
+      ],
+      "outputs": [
+        "macro-report"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-market-analysis",
+      "path": "skills/india-market-analysis/SKILL.md",
+      "inputs": [
+        "index data",
+        "breadth universe",
+        "dated flows and volatility"
+      ],
+      "outputs": [
+        "market-regime-report"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-technical-analysis",
+      "path": "skills/india-technical-analysis/SKILL.md",
+      "inputs": [
+        "OHLCV or dated charts",
+        "benchmark series"
+      ],
+      "outputs": [
+        "technical-report",
+        "technical-entry-zones"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-derivatives-analysis",
+      "path": "skills/india-derivatives-analysis/SKILL.md",
+      "inputs": [
+        "timestamped chain",
+        "contract specifications",
+        "underlying"
+      ],
+      "outputs": [
+        "derivatives-report"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-market-news-roundup",
+      "path": "skills/india-market-news-roundup/SKILL.md",
+      "inputs": [
+        "dated news",
+        "official releases",
+        "market observations"
+      ],
+      "outputs": [
+        "news-roundup"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-news-impact-analysis",
+      "path": "skills/india-news-impact-analysis/SKILL.md",
+      "inputs": [
+        "verified event",
+        "disclosed exposures",
+        "market reaction"
+      ],
+      "outputs": [
+        "event-scenarios"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-ipo-analysis",
+      "path": "skills/india-ipo-analysis/SKILL.md",
+      "inputs": [
+        "offer documents",
+        "issue terms",
+        "subscription",
+        "GMP quotes"
+      ],
+      "outputs": [
+        "complete-ipo-report",
+        "gmp-section",
+        "dual-ipo-verdict"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-ipo-tracker",
+      "path": "skills/india-ipo-tracker/SKILL.md",
+      "inputs": [
+        "official issue calendar",
+        "subscription and GMP observations"
+      ],
+      "outputs": [
+        "ipo-calendar",
+        "ipo-changes"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-stock-screener",
+      "path": "skills/india-stock-screener/SKILL.md",
+      "inputs": [
+        "defined security universe",
+        "dated metric dataset"
+      ],
+      "outputs": [
+        "screen-specification",
+        "candidate-list"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-portfolio-analysis",
+      "path": "skills/india-portfolio-analysis/SKILL.md",
+      "inputs": [
+        "holdings or weights",
+        "dated prices",
+        "constraints"
+      ],
+      "outputs": [
+        "portfolio-report"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-trade-planning",
+      "path": "skills/india-trade-planning/SKILL.md",
+      "inputs": [
+        "price and OHLCV",
+        "valuation",
+        "market context",
+        "optional risk constraints"
+      ],
+      "outputs": [
+        "entry-plan",
+        "reachability-assessment"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-strategy-backtesting",
+      "path": "skills/india-strategy-backtesting/SKILL.md",
+      "inputs": [
+        "frozen strategy",
+        "historical data",
+        "cost and timing model"
+      ],
+      "outputs": [
+        "backtest-report"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-research-journal",
+      "path": "skills/india-research-journal/SKILL.md",
+      "inputs": [
+        "research report",
+        "prior journal records",
+        "outcome evidence"
+      ],
+      "outputs": [
+        "thesis-record",
+        "research-postmortem"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    },
+    {
+      "id": "india-watchlist-monitor",
+      "path": "skills/india-watchlist-monitor/SKILL.md",
+      "inputs": [
+        "watchlist",
+        "prior snapshot",
+        "new evidence"
+      ],
+      "outputs": [
+        "watchlist-changes"
+      ],
+      "requires": [
+        "india-research-core"
+      ],
+      "data_access": "browser-or-connected-tool-or-provided-files"
+    }
+  ]
+}

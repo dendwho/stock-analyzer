@@ -1,0 +1,10 @@
+{
+  "fast": 20,
+  "slow": 50,
+  "initial_cash": 100000,
+  "buy_cost_bps": 10,
+  "sell_cost_bps": 15,
+  "slippage_bps": 5,
+  "max_volume_fraction": 0.01,
+  "lot_size": 1
+}

@@ -1,0 +1,6 @@
+{
+  "zone_low": 180,
+  "zone_high": 190,
+  "horizon_sessions": 20,
+  "nonoverlapping": true
+}

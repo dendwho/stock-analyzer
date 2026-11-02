@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Earnings Review"
+  short_description: "Indian Earnings Review: research workflow"
+  default_prompt: "Use $india-earnings-analysis for Indian market research."

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:india-stock-research:report:1",
+  "title": "Saved Indian stock or IPO research record",
+  "type": "object",
+  "required": ["schema_version", "report_type", "issuer", "as_of", "verdict", "sources", "data_gaps"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "report_type": {"enum": ["stock", "ipo"]},
+    "issuer": {"type": "object", "required": ["name"], "properties": {"name": {"type": "string", "minLength": 1}, "nse_symbol": {"type": ["string", "null"]}, "bse_code": {"type": ["string", "null"]}, "isin": {"type": ["string", "null"]}}},
+    "as_of": {"type": "string", "format": "date-time"},
+    "verdict": {"type": "object", "required": ["status", "timeframe", "rationale", "confidence", "confidence_reason"], "properties": {
+      "status": {"enum": ["attractive-now", "attractive-below", "watchlist", "avoid", "insufficient-evidence"]},
+      "timeframe": {"type": "string", "minLength": 1}, "rationale": {"type": "string", "minLength": 1},
+      "confidence": {"enum": ["high", "medium", "low"]}, "confidence_reason": {"type": "string", "minLength": 1}
+    }},
+    "reference_price": {"oneOf": [{"type": "null"}, {"type": "object", "required": ["value", "observed_at", "freshness", "source_ids"], "properties": {
+      "value": {"type": "number", "exclusiveMinimum": 0}, "observed_at": {"type": "string", "format": "date-time"},
+      "freshness": {"enum": ["verified", "stale", "unknown"]}, "source_ids": {"$ref": "#/$defs/source_ids"}
+    }}]},
+    "sources": {"type": "array", "items": {"type": "object", "required": ["id", "title", "retrieved_at"], "properties": {
+      "id": {"type": "string", "minLength": 1}, "title": {"type": "string", "minLength": 1},
+      "url": {"type": "string", "format": "uri"}, "artifact": {"type": "string", "minLength": 1},
+      "retrieved_at": {"type": "string", "format": "date-time"},
+      "observed_at": {"type": ["string", "null"]}, "published_at": {"type": ["string", "null"]},
+      "page": {"type": ["string", "integer", "null"]}
+    }, "anyOf": [{"required": ["url"]}, {"required": ["artifact"]}]}},
+    "data_gaps": {"type": "array", "items": {"type": "string"}},
+    "entry_assessment": {"type": "object", "required": ["horizon", "market_context", "zones"], "properties": {
+      "horizon": {"type": "string", "minLength": 1}, "market_context": {"type": "string", "minLength": 1},
+      "unavailable_reason": {"type": "string", "minLength": 1},
+      "zones": {"type": "array", "items": {"type": "object", "required": ["low", "high", "rationale", "trigger", "invalidation", "reachability", "source_ids"], "properties": {
+        "low": {"type": "number", "exclusiveMinimum": 0}, "high": {"type": "number", "exclusiveMinimum": 0},
+        "rationale": {"type": "string", "minLength": 1}, "trigger": {"type": "string", "minLength": 1},
+        "invalidation": {"type": "string", "minLength": 1}, "reachability": {"type": "string", "minLength": 1},
+        "source_ids": {"$ref": "#/$defs/source_ids"}
+      }}}
+    }},
+    "gmp": {"type": "object", "required": ["availability", "quotes"], "properties": {
+      "availability": {"enum": ["quoted", "unavailable", "historical"]}, "reason": {"type": "string", "minLength": 1},
+      "quotes": {"type": "array", "items": {"type": "object", "required": ["premium_rupees", "observed_at", "freshness", "source_ids"], "properties": {
+        "premium_rupees": {"type": ["number", "null"]}, "observed_at": {"type": ["string", "null"]},
+        "time_precision": {"enum": ["timestamp", "date", "unknown"]},
+        "freshness": {"enum": ["within-age-limit", "stale", "unknown", "date-only-unverified", "historical"]},
+        "source_ids": {"$ref": "#/$defs/source_ids"}
+      }}}
+    }},
+    "listing_assessment": {"type": "object", "required": ["status", "rationale"], "properties": {
+      "status": {"enum": ["favorable", "mixed", "unfavorable", "insufficient-evidence", "historical"]},
+      "rationale": {"type": "string", "minLength": 1}
+    }},
+    "scenarios": {"type": "array", "items": {"type": "object", "required": ["name", "horizon", "assumptions"], "properties": {
+      "name": {"enum": ["bear", "base", "bull"]}, "horizon": {"type": "string"}, "assumptions": {"type": "string"},
+      "target_price": {"type": ["number", "null"], "minimum": 0}, "source_ids": {"$ref": "#/$defs/source_ids"}
+    }}}
+  },
+  "$defs": {"source_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}},
+  "allOf": [
+    {"if": {"properties": {"report_type": {"const": "stock"}}}, "then": {"required": ["reference_price", "entry_assessment"]}},
+    {"if": {"properties": {"report_type": {"const": "ipo"}}}, "then": {"required": ["gmp", "listing_assessment"]}}
+  ]
+}

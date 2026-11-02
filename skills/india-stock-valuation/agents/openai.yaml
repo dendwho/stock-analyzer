@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Stock Valuation"
+  short_description: "Indian Stock Valuation: research workflow"
+  default_prompt: "Use $india-stock-valuation for Indian market research."

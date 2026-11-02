@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+reports/
+results/*
+!results/.gitkeep
+data/
+dist/
+.env
+.env.*
+!.env.example

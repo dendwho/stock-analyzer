@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian IPO Tracker"
+  short_description: "Indian IPO Tracker: research workflow"
+  default_prompt: "Use $india-ipo-tracker for Indian market research."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Stock Screening"
+  short_description: "Indian Stock Screening: research workflow"
+  default_prompt: "Use $india-stock-screener for Indian market research."

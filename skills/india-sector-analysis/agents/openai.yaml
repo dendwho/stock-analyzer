@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Sector Research"
+  short_description: "Indian Sector Research: research workflow"
+  default_prompt: "Use $india-sector-analysis for Indian market research."

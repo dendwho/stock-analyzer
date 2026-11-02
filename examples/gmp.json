@@ -1,0 +1,22 @@
+{
+  "issue_price": 100,
+  "price_basis": "synthetic upper-band illustration",
+  "as_of": "2026-11-02T15:30:00+05:30",
+  "quotes": [
+    {
+      "source": "Fictional publisher A",
+      "premium_rupees": 15,
+      "observed_at": "2026-11-02T14:00:00+05:30"
+    },
+    {
+      "source": "Fictional publisher B",
+      "premium_rupees": -5,
+      "observed_at": "2026-11-01T10:00:00+05:30"
+    },
+    {
+      "source": "Fictional publisher C",
+      "premium_rupees": null,
+      "observed_at": null
+    }
+  ]
+}

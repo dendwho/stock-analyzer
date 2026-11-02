@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Strategy Backtesting"
+  short_description: "Indian Strategy Backtesting: research workflow"
+  default_prompt: "Use $india-strategy-backtesting for Indian market research."

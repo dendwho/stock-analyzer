@@ -1,0 +1,13 @@
+{
+  "fcff_crore": [
+    100,
+    110,
+    121,
+    133.1,
+    146.41
+  ],
+  "wacc": 0.12,
+  "terminal_growth": 0.04,
+  "shares_crore": 10,
+  "net_debt_crore": 50
+}

@@ -1,0 +1,10 @@
+{
+  "issue_price": 100,
+  "pre_shares": 10000000,
+  "fresh_amount_rupees": 200000000,
+  "ofs_shares": 1000000,
+  "issuer_expenses_rupees": 10000000,
+  "pre_net_debt_rupees": 100000000,
+  "non_debt_deployment_rupees": 50000000,
+  "attributable_pat_rupees": 60000000
+}
